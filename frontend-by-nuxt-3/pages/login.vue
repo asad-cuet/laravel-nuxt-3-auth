@@ -18,7 +18,7 @@ const { $sanctumAuth } = useNuxtApp()
 const router = useRouter()
 const errors = ref([])
 
-const email=ref('test@example.com')
+const email=ref('test@gmail.com')
 const password=ref('password')
 
 async function login (){

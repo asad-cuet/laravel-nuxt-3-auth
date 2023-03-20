@@ -1,11 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    routeRules: {
+        '/profile': { ssr: false },
+        '/login': { ssr: false }
+      },
     modules: [
         'nuxt-sanctum-auth'
         // ...
       ],
     nuxtSanctumAuth: {
-        baseUrl: 'http://localhost:8000',
+        baseUrl: 'http://127.0.0.1:8000',
         endpoints: {
             csrf: '/sanctum/csrf-cookie',
             login: 'api/login',
@@ -18,9 +22,4 @@ export default defineNuxtConfig({
             logout: '/'
         }
     }
-
 })
-
-
-
-
