@@ -13,8 +13,8 @@
 const { user, loggedIn } = useState('auth').value
 
 // Pages available only when logged in
-definePageMeta({
-  middleware: 'auth'
-})
+// definePageMeta({
+//   middleware: 'auth'
+// })
 
 </script>

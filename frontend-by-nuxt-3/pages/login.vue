@@ -30,7 +30,7 @@ async function login (){
       },
       // optional callback function
       (data) => {
-        console.log(data)
+        console.log(data.success)
         router.push('/profile')
       }
     )
